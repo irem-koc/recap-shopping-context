@@ -18,16 +18,17 @@ const Cart = () => {
             )}
             {cartItems.map((product) => (
                 <div key={product.id} className="cart-item">
-                    <div>
+                    <div className="cart-img">
                         <img
                             className="cart-image"
                             src={product.image}
                             alt={product.name}
                         />
+                        <div className="cart-name">{product.name}</div>
                     </div>
                     
                     <div className="cart-functions">
-                        <div className="cart-name">{product.name}</div>
+                        
                         <button
                             className="add-btn"
                             onClick={() => handleAddToCart(product)}

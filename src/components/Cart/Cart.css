@@ -6,9 +6,15 @@
     background-color: #96c6d7;
     min-height: 43vh;
 }
+.cart-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .cart-item{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .cart-items {
     text-transform: uppercase;
